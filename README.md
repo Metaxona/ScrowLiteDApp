@@ -118,8 +118,8 @@ No KYC Needed To Create And Interact With A Trade, Both Party Just Need To Have 
 
 Current Network: `Sepolia`
 
-**Escrow** - `0x61caFF3872f505D3D0a4F40E156235D506816E49`  
-**Escrow Data** - `0xB4B5a608908cb68cDBaDD620bb27E05080AF7931`  
+**ScrowLite** - `0x61caFF3872f505D3D0a4F40E156235D506816E49`  
+**ScrowLite Data** - `0xB4B5a608908cb68cDBaDD620bb27E05080AF7931`  
 **ERC Balance Library** - `0xE8BB32A0A9B69C95D68Bf8890f3ff5fbB46a691b`  
 **Id Generator Library** - `0xd19247303c26aa4850776C9fCd7E995C883CDF27`
 

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    webpack: config => {
+  reactStrictMode: true,
+  webpack: config => {
     config.resolve.fallback = { fs: false, net: false, tls: false };
     config.externals.push('pino-pretty', 'lokijs', 'encoding');
     return config;
@@ -12,7 +12,8 @@ const nextConfig = {
   images: {
     domains: ['ipfs.io'],
   },
-  output: "export"
+  output: "export",
+  basePath: '/ScrowLiteDApp/',
 }
 
 module.exports = nextConfig
