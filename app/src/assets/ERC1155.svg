@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400"
+   height="400"
+   viewBox="0 0 105.83333 105.83333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="ERC1155.svg"
+   inkscape:export-filename="ERC1155.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6719666"
+     inkscape:cx="104.36811"
+     inkscape:cy="261.96696"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#96a0ab;stroke:#96a0ab;stroke-width:1.13042262;stroke-linecap:round;paint-order:normal;fill-opacity:0;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:round"
+       id="path974"
+       inkscape:flatsided="true"
+       sodipodi:sides="6"
+       sodipodi:cx="11.861121"
+       sodipodi:cy="33.12162"
+       sodipodi:r1="13.74107"
+       sodipodi:r2="11.900115"
+       sodipodi:arg1="0.52924678"
+       sodipodi:arg2="1.0528456"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 23.722242,40.059257 11.783512,46.862471 -0.07760914,39.924834 7.2243527e-8,26.183983 11.93873,19.38077 23.799851,26.318406 Z"
+       transform="matrix(3.5925197,-0.03001987,0.02286428,3.4308558,9.5612979,-60.351979)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:0;font-family:PMingLiU-ExtB;-inkscape-font-specification:'PMingLiU-ExtB Bold';letter-spacing:2.64583px;fill:#96a0ab;fill-opacity:0;stroke:#96a0ab;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="27.747589"
+       y="75.98333"
+       id="text1030-6"
+       transform="scale(0.97260644,1.0281651)"><tspan
+         sodipodi:role="line"
+         id="tspan1028-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:PMingLiU-ExtB;-inkscape-font-specification:PMingLiU-ExtB;fill:#96a0ab;fill-opacity:0;stroke-width:1.32292;stroke-dasharray:none;stroke:#96a0ab;stroke-opacity:1"
+         x="27.747589"
+         y="75.98333">ERC1155</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;line-height:0;font-family:PMingLiU-ExtB;-inkscape-font-specification:'PMingLiU-ExtB Bold';letter-spacing:5.29167px;fill:#96a0ab;fill-opacity:0;stroke:#96a0ab;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="18.894907"
+       y="55.523396"
+       id="text1030"
+       transform="scale(0.96102921,1.0405511)"><tspan
+         sodipodi:role="line"
+         id="tspan1028"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:PMingLiU-ExtB;-inkscape-font-specification:'PMingLiU-ExtB Bold';stroke-width:3.96875;stroke-dasharray:none;fill:#96a0ab;fill-opacity:0;stroke:#96a0ab;stroke-opacity:1"
+         x="18.894907"
+         y="55.523396">NFT</tspan></text>
+  </g>
+</svg>
