@@ -12,6 +12,7 @@ const nextConfig = {
   images: {
     domains: ['ipfs.io'],
   },
+  output: "export"
 }
 
 module.exports = nextConfig
