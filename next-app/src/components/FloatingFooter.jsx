@@ -12,14 +12,14 @@ export default function FloatingFooter() {
             <Flex position={"fixed"} right={"0.7rem"} bottom={"5rem"} gap={"0.5rem"} flexDirection={"column"}>
                 {showLinks && (
                     <Tooltip label={"Bug Report"} placement="left">
-                        <Button p={0} as={Link} href={"https://github.com/Metaxona/ScrowLite/issues"} target="_blank" borderRadius={50} w={"1rem"} colorScheme="blue">
+                        <Button p={0} as={Link} href={"https://github.com/Metaxona/ScrowLiteDApp/issues"} target="_blank" borderRadius={50} w={"1rem"} colorScheme="blue">
                             <FaBug ize={"5em"} />
                         </Button>
                     </Tooltip>
                 )}
                 {showLinks && (
                     <Tooltip label={"Github"} placement="left">
-                        <Button p={0} as={Link} href={"https://github.com/Metaxona/ScrowLite"} target="_blank" borderRadius={50} w={"1rem"} colorScheme="blue">
+                        <Button p={0} as={Link} href={"https://github.com/Metaxona/ScrowLiteDApp"} target="_blank" borderRadius={50} w={"1rem"} colorScheme="blue">
                             <FaGithub />
                         </Button>
                     </Tooltip>

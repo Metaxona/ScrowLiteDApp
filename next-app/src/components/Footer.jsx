@@ -17,10 +17,10 @@ export default function Footer() {
                         <Text>{new Date().getFullYear()}</Text>
                     </Flex>
                     <Flex gap={"1rem"} mr={"2rem"} alignItems={"center"}>
-                        <Link href={"https://github.com/Metaxona/ScrowLite/issues"}>
+                        <Link href={"https://github.com/Metaxona/ScrowLiteDApp/issues"}>
                             <FaBug />
                         </Link>
-                        <Link href={"https://github.com/Metaxona/ScrowLite"} target="_blank">
+                        <Link href={"https://github.com/Metaxona/ScrowLiteDApp"} target="_blank">
                             <FaGithub />
                         </Link>
                         {/* <Link href={"https://discord.com"} target='_blank'> */}
