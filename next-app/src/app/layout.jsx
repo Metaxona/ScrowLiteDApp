@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="/favicon.ico" sizes="any" />
+                <link rel="icon" href={`${process.env.FAVICON_BASE_PATH}/favicon.ico`} sizes="any" />
             </head>
             <body>
                 <WalletProviders>

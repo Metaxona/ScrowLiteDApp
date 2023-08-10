@@ -33,6 +33,7 @@ jobs:
         working-directory: ./next-app
     env:
       NEXT_PUBLIC_ALCHEMY_API_KEY: ${{secrets.NEXT_PUBLIC_ALCHEMY_API_KEY}}    
+      NEXT_PUBLIC_FAVICON_BASE_PATH: ${{secrets.NEXT_PUBLIC_FAVICON_BASE_PATH}}    
     
     steps:
       - name: Checkout

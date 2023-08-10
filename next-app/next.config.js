@@ -8,6 +8,7 @@ const nextConfig = {
   },
   env: {
     ALCHEMY_API_KEY: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY,
+    FAVICON_BASE_PATH: process.env.NEXT_PUBLIC_FAVICON_BASE_PATH,
   },
   images: {
     domains: ['ipfs.io'],
