@@ -13,7 +13,7 @@ const nextConfig = {
     domains: ['ipfs.io'],
   },
   output: "export",
-  basePath: '/ScrowLiteDApp',
+  basePath: '/ScrowLiteDApp', // comment this property when trying to run locally
 }
 
 module.exports = nextConfig

@@ -91,7 +91,7 @@ export default function TradesPage() {
         }
 
         isConnected && getHistory();
-    }, [address, refreshTrades]);
+    }, [address, refreshTrades, isConnected]);
 
     let PendingVisibility = showAllPending ? pendingTrades.sort(sortByTimestamp(filterOrder)) : pendingTrades.sort(sortByTimestamp(filterOrder)).slice(0, 5);
     let CompletedVisibility = showAllCompleted ? completedTrades.sort(sortByTimestamp(filterOrder)) : completedTrades.sort(sortByTimestamp(filterOrder)).slice(0, 5);

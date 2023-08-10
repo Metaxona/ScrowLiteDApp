@@ -135,7 +135,7 @@ export default function CreateTrade() {
                 errorToast(error);
             },
         );
-    }, [address, fromContract, fromAmount, fromTokenId, isInteracting]);
+    }, [address, fromContract, fromAmount, fromTokenId, isInteracting, assetIsOwned, fromAssetType, isConnected]);
 
     async function approveAsset() {
         setIsInteracting(true);

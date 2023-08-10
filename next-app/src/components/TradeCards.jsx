@@ -7,7 +7,7 @@ import ERC721Image from "@/assets/ERC721.svg";
 import { approveERC1155, approveERC20, approveERC721, hasEnoughERCAllowance } from "@/utils/assetApproval";
 import { assetOwnership } from "@/utils/assetOwnersip";
 import copyToClipboard from "@/utils/copy";
-import { IPFStoHTTP } from "@/utils/ipfstohttps";
+import { imageLoader } from "@/utils/imageLoader";
 import shortenAddress from "@/utils/shortenAddress";
 import { errorToast, successToast } from "@/utils/toasts";
 import {
@@ -190,7 +190,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
                     // errorToast(error);
                 },
             );
-    }, [address, tradeId, drawerIsOpen]);
+    }, [address, tradeId, drawerIsOpen, fromAddress, fromAmount, fromTokenId, fromType, isConnected, partyA, partyB, toAddress, toAmount, toTokenId, toType]);
 
     useEffect(() => {
         async function getMetadata() {
@@ -205,7 +205,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
             }
             if (fromType === "ERC721") {
                 const fromMetadata = await alchemy.nft.getNftMetadata(fromAddress, fromTokenId, { tokenType: fromType });
-                setFromImage(IPFStoHTTP(fromMetadata.rawMetadata?.image_url || fromMetadata.rawMetadata?.image || ASSET_IMAGE[fromType]));
+                setFromImage(fromMetadata.rawMetadata?.image_url || fromMetadata.rawMetadata?.image || ASSET_IMAGE[fromType]);
                 setFromAssetInfo({
                     name: fromMetadata?.title,
                     collectionName: fromMetadata.contract?.name,
@@ -214,7 +214,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
             }
             if (fromType === "ERC1155") {
                 const fromMetadata = await alchemy.nft.getNftMetadata(fromAddress, fromTokenId, { tokenType: fromType });
-                setFromImage(IPFStoHTTP(fromMetadata.rawMetadata?.image_url || fromMetadata.rawMetadata?.image || ASSET_IMAGE[fromType]));
+                setFromImage(fromMetadata.rawMetadata?.image_url || fromMetadata.rawMetadata?.image || ASSET_IMAGE[fromType]);
                 setFromAssetInfo({
                     name: fromMetadata?.title,
                     collectionName: fromMetadata.contract?.name,
@@ -232,7 +232,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
             }
             if (toType === "ERC721") {
                 const toMetadata = await alchemy.nft.getNftMetadata(toAddress, toTokenId, { tokenType: toType });
-                setToImage(IPFStoHTTP(toMetadata.rawMetadata?.image_url || toMetadata.rawMetadata?.image || ASSET_IMAGE[toType]));
+                setToImage(toMetadata.rawMetadata?.image_url || toMetadata.rawMetadata?.image || ASSET_IMAGE[toType]);
                 setToAssetInfo({
                     name: toMetadata?.title,
                     collectionName: toMetadata.contract?.name,
@@ -241,7 +241,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
             }
             if (toType === "ERC1155") {
                 const toMetadata = await alchemy.nft.getNftMetadata(toAddress, toTokenId, { tokenType: toType });
-                setToImage(IPFStoHTTP(toMetadata.rawMetadata?.image_url || toMetadata.rawMetadata?.image || ASSET_IMAGE[toType]));
+                setToImage(toMetadata.rawMetadata?.image_url || toMetadata.rawMetadata?.image || ASSET_IMAGE[toType]);
                 setToAssetInfo({
                     name: toMetadata?.title,
                     collectionName: toMetadata.contract?.name,
@@ -251,7 +251,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
         }
 
         isConnected && getMetadata();
-    }, [tradeId, status]);
+    }, [tradeId, status, fromAddress, fromTokenId, fromType, isConnected, toAddress, toTokenId, toType]);
 
     useEffect(() => {
         isConnected &&
@@ -267,7 +267,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
                     // errorToast(error);
                 },
             );
-    }, [address, tradeId, hasBeenApproved, assetOwner]);
+    }, [address, tradeId, hasBeenApproved, assetOwner, isConnected, partyB, status, toAddress, toAmount, toTokenId, toType]);
 
     async function approveAsset() {
         setIsInteracting(true);
@@ -334,6 +334,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
                 </Heading>
                 <Flex maxW={"-webkit-fill-available"} flexDirection={"column"} gap={"0.3rem"}>
                     <Image
+                        loader={imageLoader}
                         sizes="100vw"
                         style={{
                             width: "100%",
@@ -428,6 +429,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
                                 >
                                     <Box w={"10rem"} h={"10rem"} aspectRatio={1}>
                                         <Image
+                                            loader={imageLoader}
                                             sizes="100vw"
                                             style={{
                                                 width: "100%",
@@ -497,6 +499,7 @@ export default function TradeCard({ partyA, partyB, title, tradeId, status, from
                                 >
                                     <Box w={"10rem"} h={"10rem"} aspectRatio={1}>
                                         <Image
+                                            loader={imageLoader}
                                             sizes="100vw"
                                             style={{
                                                 width: "100%",
