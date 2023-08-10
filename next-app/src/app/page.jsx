@@ -105,7 +105,7 @@ export default function Home() {
     }, []);
 
     return (
-        <Box w={"100dvw"}>
+        <Box>
             <Flex flexDirection={"column"} gap={"1rem"} alignItems={"center"}>
                 <Flex alignItems={"center"} my={"2rem"} flexDirection={"column"}>
                     {colorMode == "light" ? <Image draggable={false} src={ScrowLiteLogoWhiteBF} alt="ScrowLite" width={160} height={160} /> : <Image draggable={false} src={ScrowLiteLogoBlackWF} alt="ScrowLite" width={160} height={160} />}

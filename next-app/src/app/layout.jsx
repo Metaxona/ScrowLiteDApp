@@ -22,10 +22,8 @@ export default function RootLayout({ children }) {
                 <WalletProviders>
                     <Providers>
                         <Header />
-                        <main>
-                            {children}
-                            <FloatingFooter />
-                        </main>
+                        <main>{children}</main>
+                        <FloatingFooter />
                         <MobileNavigation />
                         <Footer />
                     </Providers>
